@@ -26,6 +26,16 @@ export default React.createClass({
         };
     },
 
+    componentWillMount(){
+        if (FeedStore.auth.cookie && '' !== FeedStore.auth.cookie) {
+            let cookieValues = FeedStore.auth.cookie.split('=');
+            this.setState({
+                cookieName: cookieValues[0],
+                cookieValue: cookieValues[1]
+            })
+        }
+    },
+
     onFeedStoreUpdated(payload){
         let _state = this.state;
         _state.serverResult = JSON.parse(payload.text).objects;
@@ -73,6 +83,7 @@ export default React.createClass({
     },
 
     render() {
+
         return (
             <div>
                 <h3>Login for å lese Feed eller telefonliste fra https://knett.evita.no</h3>

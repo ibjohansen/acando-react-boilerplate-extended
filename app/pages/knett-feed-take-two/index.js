@@ -27,6 +27,16 @@ export default React.createClass({
         };
     },
 
+
+    componentWillMount(){
+        if (FeedStore.auth.userName && '' !== FeedStore.auth.userName) {
+            this.setState({
+                userName: FeedStore.auth.userName,
+                password: FeedStore.auth.password
+            })
+        }
+    },
+
     onFeedStoreUpdated(payload){
         let _state = this.state;
         _state.serverResult = JSON.parse(payload.text).objects;
