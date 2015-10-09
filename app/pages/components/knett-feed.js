@@ -23,7 +23,7 @@ export default React.createClass({
                     return <Glyphicon glyph="glyphicon glyphicon-map-marker"/>;
                     break;
                 default:
-                    return <span>xxx</span>;
+                    return <span></span>;
             }
         } else {
             return <span></span>
