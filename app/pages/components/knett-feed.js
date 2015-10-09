@@ -22,6 +22,36 @@ export default React.createClass({
                 case 'CHECKIN':
                     return <Glyphicon glyph="glyphicon glyphicon-map-marker"/>;
                     break;
+                case 'LIKE_DOCUMENT':
+                    return <Glyphicon glyph="glyphicon glyphicon-thumbs-up"/>;
+                    break;
+                case 'STATUS_UPDATE':
+                    return <Glyphicon glyph="glyphicon glyphicon-flag"/>;
+                    break;
+                case 'STATUS_UPDATE_WORKSPACE':
+                    return <Glyphicon glyph="glyphicon glyphicon-flag"/>;
+                    break;
+                case 'STATUSUPDATE_MENTION':
+                    return <Glyphicon glyph="glyphicon glyphicon-flag"/>;
+                    break;
+                case 'COMMENT':
+                    return <Glyphicon glyph="glyphicon glyphicon-comment"/>;
+                    break;
+                case 'LIKE':
+                    return <Glyphicon glyph="glyphicon glyphicon-humbs-up"/>;
+                    break;
+                case 'LIKE_COMMENT':
+                    return <Glyphicon glyph="glyphicon glyphicon-humbs-up"/>;
+                    break;
+                case 'NEW_BLOG_POST':
+                    return <Glyphicon glyph="glyphicon glyphicon-bold"/>;
+                    break;
+                case 'NEW_BLOG_COMMENT':
+                    return <Glyphicon glyph="glyphicon glyphicon-comment"/>;
+                    break;
+                case 'NEWBOSS':
+                    return <Glyphicon glyph="glyphicon glyphicon-fire"/>;
+                    break;
                 default:
                     return <span></span>;
             }
