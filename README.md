@@ -19,7 +19,7 @@ If there is a folder: public/build, delete it as the development-server will use
 
 navigate to [localhost:3000](http://localhost:3000) in your browser
 
-You can also find a [demo here](http://acando-react-boilerplate-2.herokuapp.com]) 
+You can also find a [demo here](http://acando-react-boilerplate-2.herokuapp.com) 
 
 Short descitpion of the app (in Norwegian)
 
